@@ -37,8 +37,7 @@ The component emphasizes accessibility, clean code, and smooth UI/UX interaction
 
 ## Technologies
 - **HTML5** – semantic structure for better accessibility and SEO  
-- **CSS3** – Flexbox, Grid, transitions, and responsive design  
-- **JavaScript** (optional) – for interactive components if needed  
+- **CSS3** – Flexbox, Grid and responsive design  
 - **Google Fonts & Font Awesome** – typography and icons
 
 ## Installation
