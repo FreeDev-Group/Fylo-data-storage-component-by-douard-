@@ -49,3 +49,112 @@ body {
 .icons div:hover {
   transform: scale(1.1);
 }
+/* RIGHT CARD */
+.card-right {
+  background: hsl(228, 56%, 26%);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  width: 400px;
+  position: relative;
+}
+
+.text {
+  font-size: 14px;
+  color: hsl(243, 100%, 93%);
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  background: hsl(229, 57%, 11%);
+  height: 18px;
+  border-radius: 20px;
+  margin: 20px 0;
+  padding: 3px;
+}
+
+.progress {
+  height: 100%;
+  width: 81.5%;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 20px;
+  position: relative;
+}
+
+/* SMALL WHITE CIRCLE */
+.circle {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* RANGE */
+.range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: hsl(243, 100%, 93%);
+}
+
+/* FLOATING BOX */
+.storage-left {
+  position: absolute;
+  top: -35px;
+  right: 40px;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* TRIANGLE POINTER */
+.storage-left::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.big {
+  font-size: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  body {
+    background: hsl(229, 57%, 11%) url('images/bg-mobile.png') no-repeat bottom;
+    background-size: cover;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-right {
+    width: 300px;
+  }
+
+  .storage-left {
+    top: auto;
+    bottom: -50px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .storage-left::after {
+    display: none;
+  }
+}
